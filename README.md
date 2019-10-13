@@ -17,7 +17,7 @@ docker run shorty:version
 ```
 
 **Note**: the project is configured to build using java 11, if you
-need to run in an older version you'll need to adapt some parts of the code.
+need to run on an older version you'll need to adapt some parts of the code.
 
 ## Endpoints
 
