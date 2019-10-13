@@ -68,7 +68,7 @@ public class UrlService {
 
     private void validateUrl(final String url) throws InvalidUrlException {
         final String[] schemes = {"http", "https"};
-        final UrlValidator validator = new UrlValidator(schemes);
+        final var validator = new UrlValidator(schemes);
         if (!validator.isValid(url)) {
             throw new InvalidUrlException("Invalid url");
         }

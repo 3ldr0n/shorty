@@ -35,6 +35,18 @@ POST /shorten
 }
 ```
 
+#### Return
+
+```json
+{
+  "message": "created",
+  "data": {
+    "shortUrl": "abcdefghij",
+    "url": "www.github.com/3ldr0n/shorty"
+  }
+}
+```
+
 ### Get original url from shortened
 ```
 GET /shorten/{shortenedUrl}

@@ -39,7 +39,7 @@ public class UrlController {
     public ResponseEntity<BaseResponse> shortenUrl(@RequestBody final ShortenUrlRequest shortenUrlRequest) {
         try {
             final Url shortenedUrl = urlService.shortenUrl(shortenUrlRequest.getUrl());
-            final var response = new BaseResponse<>("ok", shortenedUrl);
+            final var response = new BaseResponse<>("Created", shortenedUrl);
             return ResponseEntity.status(HttpStatus.CREATED).body(response);
         } catch (final InvalidUrlException e) {
             final var response = new BaseResponse<>("Invalid url");
